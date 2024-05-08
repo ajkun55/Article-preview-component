@@ -42,20 +42,22 @@ main{
     display: flex;
     width: clamp(50%, 730px, 90%);
     background-color: white;
-    max-height: 228px;
+    max-height: 280px;
     border-radius: 0.6rem;
 }
 
 
 .pic img{
-    max-width: 285px;
-    height: auto;
-    object-fit: fill;
+   /* max-width: 285px;
+    height: 280px;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 0.6rem 0 0 0.6rem;
 }
 
 .text{
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     gap: 0.5rem;
     position: relative;
 }
@@ -65,7 +67,7 @@ h1{
     font-weight: var(--fw-7);
     line-height: 1.2;
     color: var(--clr-Very-Dark-Grayish-Blue);
-    margin-top: -0.5rem;
+    margin-block: 1rem;
 }
 
 
@@ -74,6 +76,7 @@ h1{
     margin-block: 0.5rem;
     color: var(--clr-Desaturated-Dark-Blue);
     width: 90%;
+    margin-block: 1rem;
 }
 
 .row{
